@@ -33,7 +33,7 @@ a:hover{text-decoration:underline}
 .nav a.active{color:var(--brand)}
 
 .hero{
-  background: url('assets/hero.jpg') center/cover no-repeat;
+  background: url('./assets/hero.jpg') center/cover no-repeat;
   padding: 96px 0 64px;
   box-shadow: var(--shadow);
 }
