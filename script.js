@@ -1,6 +1,5 @@
 
 function handleMailto(e){
-  // Create a mailto with prefilled subject/body
   const nombre = document.getElementById('nombre').value.trim();
   const telefono = document.getElementById('telefono').value.trim();
   const interes = document.getElementById('interes').value.trim();
@@ -16,7 +15,6 @@ function handleMailto(e){
   return false;
 }
 
-// Build dynamic WhatsApp link with prefilled text
 document.addEventListener('DOMContentLoaded', () => {
   const wsBtn = document.getElementById('ws-btn');
   const nombre = document.getElementById('nombre');
