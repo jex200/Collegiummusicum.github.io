@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conócenos | Collegium Musicum</title>
+  <meta name="description" content="Conoce la escuela, la dirección académica y presentaciones de alumnos de Collegium Musicum en Morelia.">
+  <style>
+    :root{--cm-bg:#0f172a;--cm-fg:#e2e8f0;--cm-accent:#38bdf8;--cm-muted:#94a3b8;--cm-card:#111827}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:var(--cm-bg);color:var(--cm-fg);line-height:1.6}
+    .cm-wrap{max-width:1100px;margin:0 auto;padding:20px}
+    .cm-header,.cm-footer{background:#0b1224;border-bottom:1px solid #1f2937}
+    .cm-nav a{color:var(--cm-fg);text-decoration:none;margin-right:16px;opacity:.9}
+    .cm-nav a:hover{color:var(--cm-accent)}
+    h1,h2{line-height:1.2;margin:0 0 .5rem}
+    h1{font-size:clamp(28px,4vw,40px)} h2{font-size:clamp(22px,3vw,28px);color:var(--cm-accent)}
+    p{margin:.5rem 0 1rem}
+    .cm-grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
+    .cm-card{background:var(--cm-card);border:1px solid #1f2937;border-radius:16px;padding:18px;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+    .cm-about{grid-column:1/-1}
+    .cm-lead{color:var(--cm-muted)}
+    .cm-director{grid-column:1/-1;display:grid;gap:16px;grid-template-columns:120px 1fr;align-items:center}
+    .cm-director img{width:120px;height:120px;object-fit:cover;border-radius:999px;border:2px solid var(--cm-accent)}
+    .cm-videos{grid-column:1/-1}
+    .cm-video-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+    .cm-video-grid iframe,.cm-video-grid video{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#0b1224}
+    .cm-muted{color:var(--cm-muted);font-size:.95rem}
+    @media (max-width:640px){.cm-director{grid-template-columns:1fr}.cm-director img{margin:auto}}
+  </style>
+</head>
+<body>
+
+<header class="cm-header">
+  <div class="cm-wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <div style="font-weight:700;">Collegium Musicum</div>
+    <nav class="cm-nav">
+      <a href="index.html">Inicio</a>
+      <a href="conocenos.html" aria-current="page" style="border-bottom:2px solid var(--cm-accent);padding-bottom:4px;">Conócenos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="cm-wrap" style="padding-top:24px;">
+  <section class="cm-grid">
+    <!-- Acerca de la escuela -->
+    <article class="cm-card cm-about">
+      <h1>Conócenos</h1>
+      <p class="cm-lead">Somos una escuela de educación musical infantil y juvenil en Morelia. Formamos ensambles, desarrollamos oído musical y fomentamos el amor por la música a través de la práctica y presentaciones reales.</p>
+      <p>Nuestro enfoque combina técnica, interpretación y trabajo en equipo. Impartimos clases de instrumento, solfeo y ensamble, con presentaciones periódicas para que el aprendizaje culmine en experiencias artísticas.</p>
+    </article>
+
+    <!-- Director(a) -->
+    <article class="cm-card cm-director">
+      <img src="assets/director.jpg" alt="Dirección de Collegium Musicum">
+      <div>
+        <h2>Dirección</h2>
+        <p><strong>Nombre del Director/a</strong></p>
+        <p class="cm-muted">Breve biografía (3–6 líneas): formación, trayectoria docente, proyectos destacados y visión educativa. Incluye premios/colaboraciones si aplica.</p>
+      </div>
+    </article>
+
+    <!-- Videos -->
+    <article class="cm-card cm-videos">
+      <h2>Presentaciones de nuestros alumnos</h2>
+      <p class="cm-muted">Una selección de interpretaciones y conciertos recientes.</p>
+      <div class="cm-video-grid">
+        <!-- Reemplaza VIDEO_ID_x por tus IDs de YouTube -->
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Presentación 1" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Presentación 2" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Presentación 3" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- O usa archivos locales .mp4 en assets/videos/ con <video> -->
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="cm-footer">
+  <div class="cm-wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+    <small class="cm-muted">© Collegium Musicum • Morelia, Michoacán</small>
+    <small class="cm-muted"><a href="legal.html" style="color:inherit;text-decoration:none;">Términos legales</a></small>
+  </div>
+</footer>
+
+</body>
+</html>
